@@ -3,30 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="HJEBU__hG8RZotC6ddfzw1QnPi7yBzC17W9hbkC9LqI" />
-  <title>Mannan Rice Mill</title>
+
+  <meta name="description" content="Mannan Rice Mill - মানসম্মত চাল, মরিচ, হলুদ, ধিয়া, পাঁচ ফোড়ন ও চালের গুঁড়া। অর্ডার ও পাইকারি অর্ডারের জন্য যোগাযোগ করুন।">
+  <meta name="keywords" content="Mannan Rice Mill, Rice Mill Bangladesh, চাল, মরিচ, হলুদ, ধিয়া, পাঁচ ফোড়ন, চালের গুঁড়া">
+  <meta name="author" content="Mannan Rice Mill">
+
+  <meta name="google-site-verification" content="HJEBU__hG8RZotC6ddfzw1QnPi7yBzC17W9hbkC9LqI">
+
+  <title>Mannan Rice Mill | মানসম্মত চাল ও খাদ্যপণ্য</title>
 
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
     }
 
     body {
-      font-family: Arial, sans-serif;
-      background: #f5faf5;
+      font-family: Arial, "Noto Sans Bengali", sans-serif;
+      background: #f7faf7;
       color: #183b24;
       line-height: 1.6;
     }
 
     header {
-      background: #123d22;
+      background: #0b4d2b;
       color: white;
-      padding: 18px 7%;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 3px 15px rgba(0,0,0,.15);
+    }
+
+    .nav {
+      max-width: 1150px;
+      margin: auto;
+      padding: 15px 20px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
     }
 
     .logo {
@@ -34,110 +50,234 @@
       font-weight: bold;
     }
 
+    .logo span {
+      color: #f5c542;
+    }
+
     nav a {
       color: white;
       text-decoration: none;
       margin-left: 20px;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #f5c542;
     }
 
     .hero {
-      padding: 90px 8%;
-      background: linear-gradient(135deg, #e4f4e5, #ffffff);
+      background: linear-gradient(135deg, #0b4d2b, #197044);
+      color: white;
+      padding: 90px 20px;
+      text-align: center;
     }
 
     .hero h1 {
-      font-size: 48px;
-      margin: 15px 0;
-    }
-
-    .hero h1 span {
-      color: #2d7d46;
+      font-size: 46px;
+      margin-bottom: 15px;
     }
 
     .hero p {
-      font-size: 19px;
-      max-width: 650px;
-      margin-bottom: 20px;
+      font-size: 20px;
+      max-width: 700px;
+      margin: auto;
+      opacity: .95;
     }
 
-    .button {
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .btn {
       display: inline-block;
-      background: #2d7d46;
-      color: white;
-      padding: 13px 22px;
-      border-radius: 8px;
+      padding: 13px 25px;
+      margin: 6px;
+      border-radius: 30px;
       text-decoration: none;
-      margin-right: 10px;
+      font-weight: bold;
+      transition: .3s;
+    }
+
+    .btn-primary {
+      background: #f5c542;
+      color: #183b24;
+    }
+
+    .btn-secondary {
+      border: 2px solid white;
+      color: white;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
     }
 
     section {
-      padding: 65px 8%;
+      max-width: 1150px;
+      margin: auto;
+      padding: 70px 20px;
     }
 
-    section h2 {
-      font-size: 32px;
-      margin-bottom: 18px;
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
     }
 
-    .light {
-      background: #eaf4e9;
+    .section-title h2 {
+      font-size: 34px;
+      color: #0b4d2b;
     }
 
-    .cards {
-      display: flex;
-      gap: 22px;
-      flex-wrap: wrap;
-      margin-top: 25px;
+    .section-title p {
+      color: #64736a;
+      margin-top: 8px;
     }
 
-    .card {
+    .about {
+      text-align: center;
+      max-width: 850px;
+      margin: auto;
+      font-size: 18px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .product {
       background: white;
-      padding: 28px;
-      border-radius: 15px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-      flex: 1;
-      min-width: 220px;
+      border-radius: 18px;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(0,0,0,.08);
+      transition: .3s;
     }
 
-    .card-icon {
-      font-size: 40px;
+    .product:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(0,0,0,.13);
+    }
+
+    .product-image {
+      height: 150px;
+      border-radius: 14px;
+      background: #edf5ee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 65px;
+      margin-bottom: 20px;
+    }
+
+    .product h3 {
+      color: #0b4d2b;
+      font-size: 23px;
+      margin-bottom: 8px;
+    }
+
+    .product p {
+      color: #66736b;
+    }
+
+    .order-box {
+      background: #0b4d2b;
+      color: white;
+      border-radius: 22px;
+      padding: 50px 25px;
+      text-align: center;
+    }
+
+    .order-box h2 {
+      font-size: 34px;
+      margin-bottom: 12px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .contact-card {
+      background: white;
+      padding: 30px 20px;
+      border-radius: 18px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(0,0,0,.07);
+    }
+
+    .contact-card .icon {
+      font-size: 35px;
       margin-bottom: 10px;
     }
 
-    .location {
-      background: #dceedd;
-      padding: 30px;
-      border-radius: 15px;
+    .contact-card h3 {
+      color: #0b4d2b;
+      margin-bottom: 8px;
     }
 
-    .contact {
-      background: #123d22;
-      color: white;
+    .contact-card a {
+      color: #183b24;
+      text-decoration: none;
+      word-break: break-word;
+    }
+
+    .map {
+      text-align: center;
+      background: #edf5ee;
+      padding: 50px 20px;
+    }
+
+    .map h2 {
+      color: #0b4d2b;
+      margin-bottom: 10px;
     }
 
     footer {
-      background: #0b2917;
+      background: #07361e;
       color: white;
       text-align: center;
-      padding: 25px;
+      padding: 30px 20px;
     }
 
-    @media (max-width: 700px) {
-      header {
-        display: block;
+    footer p {
+      margin: 5px;
+      opacity: .9;
+    }
+
+    @media (max-width: 800px) {
+      .hero h1 {
+        font-size: 35px;
       }
 
       nav {
-        margin-top: 12px;
+        display: none;
       }
 
-      nav a {
-        margin-right: 12px;
-        margin-left: 0;
+      .products,
+      .contact-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .products,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 70px 15px;
       }
 
       .hero h1 {
-        font-size: 36px;
+        font-size: 31px;
+      }
+
+      .section-title h2 {
+        font-size: 28px;
       }
     }
   </style>
@@ -145,121 +285,174 @@
 
 <body>
 
-  <header>
-    <div class="logo">🌾 Mannan Rice Mill</div>
+<header>
+  <div class="nav">
+    <div class="logo">Mannan <span>Rice Mill</span></div>
 
     <nav>
+      <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#products">Products</a>
-      <a href="#location">Location</a>
+      <a href="#order">Order</a>
       <a href="#contact">Contact</a>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <section class="hero">
-    <p>MANNAN RICE MILL</p>
+<section class="hero" id="home">
+  <h1>Mannan Rice Mill</h1>
 
-    <h1>
-      ভালো চাল, ভালো মান,<br>
-      <span>বিশ্বাসের সাথে।</span>
-    </h1>
+  <p>
+    মানসম্মত চাল ও নির্বাচিত খাদ্যপণ্যের বিশ্বস্ত ঠিকানা।
+    গুণমান, পরিষ্কার-পরিচ্ছন্নতা ও গ্রাহকের সন্তুষ্টিই আমাদের অঙ্গীকার।
+  </p>
 
-    <p>
-      চানপুর, ছাতক, সুনামগঞ্জে মানসম্মত চাল
-      প্রক্রিয়াজাত ও সরবরাহের জন্য
-      Mannan Rice Mill।
-    </p>
+  <div class="buttons">
+    <a class="btn btn-primary" href="#products">আমাদের পণ্য দেখুন</a>
+    <a class="btn btn-secondary" href="tel:01721228690">📞 এখনই অর্ডার করুন</a>
+  </div>
+</section>
 
-    <a class="button" href="#contact">যোগাযোগ করুন</a>
-
-    <a class="button" href="#location">লোকেশন দেখুন</a>
-  </section>
-
-  <section id="about">
+<section id="about">
+  <div class="section-title">
     <h2>আমাদের সম্পর্কে</h2>
+    <p>Quality • Trust • Customer Satisfaction</p>
+  </div>
+
+  <div class="about">
+    <p>
+      <strong>Mannan Rice Mill</strong> মানসম্মত খাদ্যপণ্য সরবরাহে
+      গুরুত্ব দেয়। আমাদের লক্ষ্য হলো ভালো মানের পণ্য গ্রাহকের কাছে
+      পৌঁছে দেওয়া এবং দীর্ঘমেয়াদি বিশ্বাস তৈরি করা।
+    </p>
+  </div>
+</section>
+
+<section id="products">
+  <div class="section-title">
+    <h2>আমাদের পণ্য</h2>
+    <p>আপনার প্রয়োজনীয় পণ্য এক জায়গায়</p>
+  </div>
+
+  <div class="products">
+
+    <div class="product">
+      <div class="product-image">🌾</div>
+      <h3>Rice</h3>
+      <p>মানসম্মত ও পরিষ্কার চাল</p>
+      <a class="btn btn-primary" href="tel:01721228690">Order Now</a>
+    </div>
+
+    <div class="product">
+      <div class="product-image">🌶️</div>
+      <h3>Morich</h3>
+      <p>বাছাই করা মরিচ</p>
+      <a class="btn btn-primary" href="tel:01721228690">Order Now</a>
+    </div>
+
+    <div class="product">
+      <div class="product-image">🟡</div>
+      <h3>Holud</h3>
+      <p>গুণমানসম্পন্ন হলুদ</p>
+      <a class="btn btn-primary" href="tel:01721228690">Order Now</a>
+    </div>
+
+    <div class="product">
+      <div class="product-image">🌿</div>
+      <h3>Dhia</h3>
+      <p>বাছাই করা ধিয়া</p>
+      <a class="btn btn-primary" href="tel:01721228690">Order Now</a>
+    </div>
+
+    <div class="product">
+      <div class="product-image">🌿</div>
+      <h3>পাঁচ ফোড়ন</h3>
+      <p>সুগন্ধি ও মানসম্মত পাঁচ ফোড়ন</p>
+      <a class="btn btn-primary" href="tel:01721228690">Order Now</a>
+    </div>
+
+    <div class="product">
+      <div class="product-image">🫓</div>
+      <h3>চালের গুঁড়া</h3>
+      <p>রুটি ও বিভিন্ন খাবার তৈরির জন্য উপযোগী</p>
+      <a class="btn btn-primary" href="tel:01721228690">Order Now</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="order">
+  <div class="order-box">
+    <h2>অর্ডার করতে চান?</h2>
 
     <p>
-      Mannan Rice Mill-এর লক্ষ্য হলো পরিষ্কার,
-      ভালো মানের চাল প্রক্রিয়াজাত করে স্থানীয়
-      বাজার ও গ্রাহকদের কাছে নির্ভরযোগ্যভাবে
-      পৌঁছে দেওয়া।
+      খুচরা অথবা পাইকারি অর্ডারের জন্য সরাসরি আমাদের সাথে যোগাযোগ করুন।
     </p>
-  </section>
 
-  <section id="products" class="light">
-    <h2>আমাদের পণ্য</h2>
-
-    <div class="cards">
-
-      <div class="card">
-        <div class="card-icon">🌾</div>
-        <h3>মানসম্মত চাল</h3>
-        <p>
-          দৈনন্দিন ব্যবহারের জন্য ভালো মানের চাল।
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="card-icon">✨</div>
-        <h3>পরিষ্কার চাল</h3>
-        <p>
-          বাছাই ও পরিষ্কার করা চাল।
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="card-icon">🏭</div>
-        <h3>Rice Milling</h3>
-        <p>
-          ধান থেকে চাল প্রক্রিয়াজাতকরণের সুবিধা।
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="location">
-    <div class="location">
-
-      <h2>📍 আমাদের লোকেশন</h2>
-
-      <p>
-        Chanpur, Chhatak,<br>
-        Sunamganj, Sylhet, Bangladesh
-      </p>
-
-      <br>
-
-      <a
-        class="button"
-        target="_blank"
-        href="https://www.google.com/maps/search/?api=1&query=Mannan+Rice+Mill%2C+Chanpur%2C+Chhatak%2C+Sunamganj%2C+Bangladesh">
-        Google Maps খুলুন
+    <div class="buttons">
+      <a class="btn btn-primary" href="tel:01721228690">
+        📞 Order Now
       </a>
 
+      <a class="btn btn-secondary" href="tel:01721228690">
+        📦 Wholesale / Bulk Order
+      </a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="contact" class="contact">
-
+<section id="contact">
+  <div class="section-title">
     <h2>যোগাযোগ করুন</h2>
+    <p>আমরা আপনার যোগাযোগের অপেক্ষায় আছি</p>
+  </div>
 
-    <p>
-      Mannan Rice Mill সম্পর্কে জানতে
-      আমাদের সাথে যোগাযোগ করুন।
-    </p>
+  <div class="contact-grid">
 
-    <br>
+    <div class="contact-card">
+      <div class="icon">📞</div>
+      <h3>Phone</h3>
+      <a href="tel:01721228690">01721228690</a>
+    </div>
 
-    <p>
-      📍 Chanpur, Chhatak, Sunamganj
-    </p>
+    <div class="contact-card">
+      <div class="icon">✉️</div>
+      <h3>Email</h3>
+      <a href="mailto:alom.sa2@gmail.com">
+        alom.sa2@gmail.com
+      </a>
+    </div>
 
-  </section>
+    <div class="contact-card">
+      <div class="icon">📍</div>
+      <h3>Location</h3>
+      <p>Misin Bari</p>
+      <p>XGHP+QP, Paigonj, Bangladesh</p>
+    </div>
 
-  <footer>
-    © 2026 Mannan Rice Mill
-  </footer>
+  </div>
+</section>
+
+<div class="map">
+  <h2>📍 আমাদের লোকেশন</h2>
+
+  <p>Misin Bari, XGHP+QP, Paigonj, Bangladesh</p>
+
+  <br>
+
+  <a
+    class="btn btn-primary"
+    target="_blank"
+    href="https://www.google.com/maps/search/?api=1&query=XGHP%2BQP%2C+Paigonj%2C+Bangladesh">
+    🗺️ Google Maps এ দেখুন
+  </a>
+</div>
+
+<footer>
+  <p><strong>Mannan Rice Mill</strong></p>
+  <p>Quality Products • Trusted Service</p>
+  <p>© 2026 Mannan Rice Mill. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
