@@ -1,458 +1,1036 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="Mannan Rice Mill - মানসম্মত চাল, মরিচ, হলুদ, ধিয়া, পাঁচ ফোড়ন ও চালের গুঁড়া। অর্ডার ও পাইকারি অর্ডারের জন্য যোগাযোগ করুন।">
-  <meta name="keywords" content="Mannan Rice Mill, Rice Mill Bangladesh, চাল, মরিচ, হলুদ, ধিয়া, পাঁচ ফোড়ন, চালের গুঁড়া">
-  <meta name="author" content="Mannan Rice Mill">
+<meta name="description" content="Mannan Rice Mill - মানসম্মত চাল, মরিচ, হলুদ, ধনিয়া, পাঁচ ফোড়ন ও চালের গুঁড়া। অনলাইন অর্ডার ও পাইকারি অর্ডার।">
+<meta name="keywords" content="Mannan Rice Mill, Rice, Morich, Holud, Dhonia, Pach Foron, Chaler Gura">
+<meta name="author" content="Mannan Rice Mill">
 
-  <meta name="google-site-verification" content="HJEBU__hG8RZotC6ddfzw1QnPi7yBzC17W9hbkC9LqI">
+<meta name="google-site-verification" content="HJEBU__hG8RZotC6ddfzw1QnPi7yBzC17W9hbkC9LqI">
 
-  <title>Mannan Rice Mill | মানসম্মত চাল ও খাদ্যপণ্য</title>
+<title>Mannan Rice Mill | Quality Food Products</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
 
-    body {
-      font-family: Arial, "Noto Sans Bengali", sans-serif;
-      background: #f7faf7;
-      color: #183b24;
-      line-height: 1.6;
-    }
+body{
+  font-family:Arial,"Noto Sans Bengali",sans-serif;
+  background:#f7faf7;
+  color:#163d26;
+}
 
-    header {
-      background: #0b4d2b;
-      color: white;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 3px 15px rgba(0,0,0,.15);
-    }
+header{
+  position:sticky;
+  top:0;
+  z-index:999;
+  background:rgba(255,255,255,.96);
+  box-shadow:0 2px 15px rgba(0,0,0,.12);
+}
 
-    .nav {
-      max-width: 1150px;
-      margin: auto;
-      padding: 15px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
+.nav{
+  max-width:1200px;
+  margin:auto;
+  padding:13px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
 
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-    }
+.logo{
+  font-size:25px;
+  font-weight:800;
+  color:#07552c;
+  white-space:nowrap;
+}
 
-    .logo span {
-      color: #f5c542;
-    }
+.logo span{
+  color:#b88918;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
-      font-weight: 600;
-    }
+nav{
+  display:flex;
+  gap:20px;
+}
 
-    nav a:hover {
-      color: #f5c542;
-    }
+nav a{
+  text-decoration:none;
+  color:#173b28;
+  font-weight:600;
+}
 
-    .hero {
-      background: linear-gradient(135deg, #0b4d2b, #197044);
-      color: white;
-      padding: 90px 20px;
-      text-align: center;
-    }
+nav a:hover{
+  color:#0a7a3c;
+}
 
-    .hero h1 {
-      font-size: 46px;
-      margin-bottom: 15px;
-    }
+.cart-top{
+  border:0;
+  background:#07552c;
+  color:white;
+  padding:11px 16px;
+  border-radius:25px;
+  font-weight:bold;
+  cursor:pointer;
+}
 
-    .hero p {
-      font-size: 20px;
-      max-width: 700px;
-      margin: auto;
-      opacity: .95;
-    }
+.cart-count{
+  background:#d9a51e;
+  color:#173b28;
+  border-radius:50%;
+  padding:2px 7px;
+  margin-left:4px;
+}
 
-    .buttons {
-      margin-top: 30px;
-    }
+.hero{
+  min-height:650px;
+  background:
+    linear-gradient(rgba(4,61,32,.28),rgba(4,61,32,.38)),
+    url("background.jpg") center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+  padding:70px 20px;
+}
 
-    .btn {
-      display: inline-block;
-      padding: 13px 25px;
-      margin: 6px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: .3s;
-    }
+.hero-box{
+  max-width:900px;
+  background:rgba(0,50,25,.25);
+  padding:40px 25px;
+  border-radius:25px;
+  backdrop-filter:blur(2px);
+}
 
-    .btn-primary {
-      background: #f5c542;
-      color: #183b24;
-    }
+.hero h1{
+  font-size:64px;
+  letter-spacing:2px;
+  text-shadow:0 3px 10px rgba(0,0,0,.45);
+}
 
-    .btn-secondary {
-      border: 2px solid white;
-      color: white;
-    }
+.hero h2{
+  font-size:34px;
+  color:#ffd75a;
+  margin:5px 0 15px;
+}
 
-    .btn:hover {
-      transform: translateY(-3px);
-    }
+.hero p{
+  font-size:21px;
+  max-width:700px;
+  margin:auto;
+}
 
-    section {
-      max-width: 1150px;
-      margin: auto;
-      padding: 70px 20px;
-    }
+.btn{
+  display:inline-block;
+  border:0;
+  padding:13px 24px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+  cursor:pointer;
+  margin:7px;
+  transition:.25s;
+}
 
-    .section-title {
-      text-align: center;
-      margin-bottom: 40px;
-    }
+.btn:hover{
+  transform:translateY(-3px);
+}
 
-    .section-title h2 {
-      font-size: 34px;
-      color: #0b4d2b;
-    }
+.btn-green{
+  background:#08723a;
+  color:white;
+}
 
-    .section-title p {
-      color: #64736a;
-      margin-top: 8px;
-    }
+.btn-gold{
+  background:#e0ae25;
+  color:#173b28;
+}
 
-    .about {
-      text-align: center;
-      max-width: 850px;
-      margin: auto;
-      font-size: 18px;
-    }
+.btn-white{
+  background:white;
+  color:#07552c;
+}
 
-    .products {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-    }
+section{
+  max-width:1200px;
+  margin:auto;
+  padding:70px 20px;
+}
 
-    .product {
-      background: white;
-      border-radius: 18px;
-      padding: 30px 20px;
-      text-align: center;
-      box-shadow: 0 5px 20px rgba(0,0,0,.08);
-      transition: .3s;
-    }
+.title{
+  text-align:center;
+  margin-bottom:40px;
+}
 
-    .product:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 10px 25px rgba(0,0,0,.13);
-    }
+.title h2{
+  color:#07552c;
+  font-size:36px;
+}
 
-    .product-image {
-      height: 150px;
-      border-radius: 14px;
-      background: #edf5ee;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 65px;
-      margin-bottom: 20px;
-    }
+.title p{
+  color:#68766d;
+  margin-top:7px;
+}
 
-    .product h3 {
-      color: #0b4d2b;
-      font-size: 23px;
-      margin-bottom: 8px;
-    }
+.features{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+  padding:25px 20px;
+  max-width:1200px;
+  margin:auto;
+}
 
-    .product p {
-      color: #66736b;
-    }
+.feature{
+  background:white;
+  border-radius:15px;
+  padding:22px 15px;
+  text-align:center;
+  box-shadow:0 4px 18px rgba(0,0,0,.07);
+}
 
-    .order-box {
-      background: #0b4d2b;
-      color: white;
-      border-radius: 22px;
-      padding: 50px 25px;
-      text-align: center;
-    }
+.feature-icon{
+  font-size:35px;
+}
 
-    .order-box h2 {
-      font-size: 34px;
-      margin-bottom: 12px;
-    }
+.feature h3{
+  margin:7px 0;
+  color:#07552c;
+}
 
-    .contact-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-    }
+.products{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
 
-    .contact-card {
-      background: white;
-      padding: 30px 20px;
-      border-radius: 18px;
-      text-align: center;
-      box-shadow: 0 5px 20px rgba(0,0,0,.07);
-    }
+.product{
+  background:white;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 5px 20px rgba(0,0,0,.09);
+  transition:.25s;
+}
 
-    .contact-card .icon {
-      font-size: 35px;
-      margin-bottom: 10px;
-    }
+.product:hover{
+  transform:translateY(-5px);
+}
 
-    .contact-card h3 {
-      color: #0b4d2b;
-      margin-bottom: 8px;
-    }
+.product-photo{
+  height:190px;
+  background:linear-gradient(135deg,#e7f2e8,#f8f5df);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:80px;
+}
 
-    .contact-card a {
-      color: #183b24;
-      text-decoration: none;
-      word-break: break-word;
-    }
+.product-body{
+  padding:20px;
+  text-align:center;
+}
 
-    .map {
-      text-align: center;
-      background: #edf5ee;
-      padding: 50px 20px;
-    }
+.product h3{
+  color:#07552c;
+  font-size:23px;
+}
 
-    .map h2 {
-      color: #0b4d2b;
-      margin-bottom: 10px;
-    }
+.product p{
+  color:#69756d;
+  margin:6px 0 12px;
+}
 
-    footer {
-      background: #07361e;
-      color: white;
-      text-align: center;
-      padding: 30px 20px;
-    }
+.price{
+  font-size:20px;
+  font-weight:bold;
+  color:#b07c08;
+}
 
-    footer p {
-      margin: 5px;
-      opacity: .9;
-    }
+.add-btn{
+  width:100%;
+  margin:10px 0 0;
+  border:0;
+  background:#07552c;
+  color:white;
+  padding:12px;
+  border-radius:10px;
+  font-weight:bold;
+  cursor:pointer;
+}
 
-    @media (max-width: 800px) {
-      .hero h1 {
-        font-size: 35px;
-      }
+.order-area{
+  background:#07552c;
+  color:white;
+  max-width:1150px;
+  margin:30px auto;
+  border-radius:25px;
+  padding:50px 25px;
+  text-align:center;
+}
 
-      nav {
-        display: none;
-      }
+.order-area h2{
+  font-size:35px;
+}
 
-      .products,
-      .contact-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
+.contact-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
 
-    @media (max-width: 520px) {
-      .products,
-      .contact-grid {
-        grid-template-columns: 1fr;
-      }
+.contact{
+  background:white;
+  padding:30px 20px;
+  text-align:center;
+  border-radius:18px;
+  box-shadow:0 5px 18px rgba(0,0,0,.07);
+}
 
-      .hero {
-        padding: 70px 15px;
-      }
+.contact-icon{
+  font-size:35px;
+}
 
-      .hero h1 {
-        font-size: 31px;
-      }
+.contact h3{
+  color:#07552c;
+  margin:8px;
+}
 
-      .section-title h2 {
-        font-size: 28px;
-      }
-    }
-  </style>
+.contact a{
+  color:#173b28;
+  text-decoration:none;
+  word-break:break-word;
+}
+
+.map-box{
+  text-align:center;
+  padding:50px 20px;
+  background:#edf5ee;
+}
+
+footer{
+  background:#06361d;
+  color:white;
+  text-align:center;
+  padding:30px 20px;
+}
+
+footer p{
+  margin:5px;
+}
+
+/* CART */
+
+.cart-overlay{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.55);
+  z-index:2000;
+}
+
+.cart{
+  position:absolute;
+  right:0;
+  top:0;
+  width:min(440px,100%);
+  height:100%;
+  background:white;
+  padding:25px;
+  overflow:auto;
+}
+
+.cart-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:1px solid #ddd;
+  padding-bottom:15px;
+}
+
+.close-cart{
+  border:0;
+  background:#eee;
+  border-radius:50%;
+  width:35px;
+  height:35px;
+  cursor:pointer;
+  font-size:20px;
+}
+
+.cart-item{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  padding:15px 0;
+  border-bottom:1px solid #eee;
+}
+
+.qty button{
+  width:30px;
+  height:30px;
+  border:0;
+  border-radius:6px;
+  background:#07552c;
+  color:white;
+  cursor:pointer;
+}
+
+.cart-total{
+  font-size:22px;
+  font-weight:bold;
+  color:#07552c;
+  margin:20px 0;
+}
+
+.checkout{
+  display:none;
+  margin-top:20px;
+}
+
+.checkout input,
+.checkout textarea,
+.checkout select{
+  width:100%;
+  padding:12px;
+  margin:7px 0;
+  border:1px solid #ccc;
+  border-radius:9px;
+  font-size:15px;
+}
+
+.checkout textarea{
+  min-height:80px;
+  resize:vertical;
+}
+
+.pay-box{
+  background:#f1f7f2;
+  padding:15px;
+  border-radius:10px;
+  margin:10px 0;
+}
+
+.place-order{
+  width:100%;
+  padding:14px;
+  border:0;
+  border-radius:10px;
+  background:#07552c;
+  color:white;
+  font-size:17px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.note{
+  font-size:13px;
+  color:#69756d;
+  margin-top:8px;
+}
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+  .nav{
+    flex-wrap:wrap;
+  }
+
+  nav{
+    order:3;
+    width:100%;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+  }
+
+  .hero{
+    min-height:580px;
+  }
+
+  .hero h1{
+    font-size:42px;
+  }
+
+  .hero h2{
+    font-size:26px;
+  }
+
+  .hero p{
+    font-size:17px;
+  }
+
+  .features{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .products{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:550px){
+
+  .logo{
+    font-size:20px;
+  }
+
+  .hero{
+    min-height:520px;
+    padding:40px 12px;
+  }
+
+  .hero-box{
+    padding:28px 15px;
+  }
+
+  .hero h1{
+    font-size:34px;
+  }
+
+  .hero h2{
+    font-size:22px;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
+  .features{
+    grid-template-columns:1fr 1fr;
+    padding:20px 12px;
+  }
+
+  .products{
+    grid-template-columns:1fr;
+  }
+
+  section{
+    padding:50px 14px;
+  }
+
+  .title h2{
+    font-size:29px;
+  }
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <div class="nav">
-    <div class="logo">Mannan <span>Rice Mill</span></div>
+<div class="nav">
 
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#products">Products</a>
-      <a href="#order">Order</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
+<div class="logo">
+MANNAN <span>RICE MILL</span>
+</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#products">Products</a>
+<a href="#about">About</a>
+<a href="#order">Order</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<button class="cart-top" onclick="openCart()">
+🛒 Cart <span class="cart-count" id="cartCount">0</span>
+</button>
+
+</div>
 </header>
 
 <section class="hero" id="home">
-  <h1>Mannan Rice Mill</h1>
+<div class="hero-box">
 
-  <p>
-    মানসম্মত চাল ও নির্বাচিত খাদ্যপণ্যের বিশ্বস্ত ঠিকানা।
-    গুণমান, পরিষ্কার-পরিচ্ছন্নতা ও গ্রাহকের সন্তুষ্টিই আমাদের অঙ্গীকার।
-  </p>
+<h1>MANNAN</h1>
+<h2>RICE MILL</h2>
 
-  <div class="buttons">
-    <a class="btn btn-primary" href="#products">আমাদের পণ্য দেখুন</a>
-    <a class="btn btn-secondary" href="tel:01721228690">📞 এখনই অর্ডার করুন</a>
-  </div>
+<p>
+Good Food • Healthy Life • A Better Tomorrow
+</p>
+
+<p style="margin-top:15px;">
+মানসম্মত চাল ও নির্বাচিত খাদ্যপণ্যের বিশ্বস্ত ঠিকানা।
+</p>
+
+<div style="margin-top:20px;">
+<a href="#products" class="btn btn-gold">Shop Now →</a>
+<a href="#order" class="btn btn-white">📦 Bulk Order</a>
+</div>
+
+</div>
 </section>
 
-<section id="about">
-  <div class="section-title">
-    <h2>আমাদের সম্পর্কে</h2>
-    <p>Quality • Trust • Customer Satisfaction</p>
-  </div>
+<div class="features">
 
-  <div class="about">
-    <p>
-      <strong>Mannan Rice Mill</strong> মানসম্মত খাদ্যপণ্য সরবরাহে
-      গুরুত্ব দেয়। আমাদের লক্ষ্য হলো ভালো মানের পণ্য গ্রাহকের কাছে
-      পৌঁছে দেওয়া এবং দীর্ঘমেয়াদি বিশ্বাস তৈরি করা।
-    </p>
-  </div>
+<div class="feature">
+<div class="feature-icon">🌾</div>
+<h3>Quality</h3>
+<p>মানসম্মত পণ্য</p>
+</div>
+
+<div class="feature">
+<div class="feature-icon">🌿</div>
+<h3>Natural</h3>
+<p>বিশুদ্ধ খাদ্যপণ্য</p>
+</div>
+
+<div class="feature">
+<div class="feature-icon">🚚</div>
+<h3>Delivery</h3>
+<p>সহজ অর্ডার ব্যবস্থা</p>
+</div>
+
+<div class="feature">
+<div class="feature-icon">📦</div>
+<h3>Wholesale</h3>
+<p>পাইকারি অর্ডার</p>
+</div>
+
+</div>
+
+<section id="about">
+
+<div class="title">
+<h2>About Mannan Rice Mill</h2>
+<p>From Our Field to Your Table</p>
+</div>
+
+<div style="max-width:850px;margin:auto;text-align:center;font-size:18px;">
+<p>
+Mannan Rice Mill মানসম্মত চাল ও খাদ্যপণ্য সরবরাহে
+গুণমান, পরিষ্কার-পরিচ্ছন্নতা এবং গ্রাহকের সন্তুষ্টিকে
+সর্বোচ্চ গুরুত্ব দেয়।
+</p>
+</div>
+
 </section>
 
 <section id="products">
-  <div class="section-title">
-    <h2>আমাদের পণ্য</h2>
-    <p>আপনার প্রয়োজনীয় পণ্য এক জায়গায়</p>
-  </div>
 
-  <div class="products">
+<div class="title">
+<h2>Our Products</h2>
+<p>Quality Products for a Healthier Future</p>
+</div>
 
-    <div class="product">
-      <div class="product-image">🌾</div>
-      <h3>Rice</h3>
-      <p>মানসম্মত ও পরিষ্কার চাল</p>
-      <a class="btn btn-primary" href="tel:01721228690">Order Now</a>
-    </div>
+<div class="products">
 
-    <div class="product">
-      <div class="product-image">🌶️</div>
-      <h3>Morich</h3>
-      <p>বাছাই করা মরিচ</p>
-      <a class="btn btn-primary" href="tel:01721228690">Order Now</a>
-    </div>
+<div class="product">
+<div class="product-photo">🌾</div>
+<div class="product-body">
+<h3>Rice</h3>
+<p>Premium Quality Rice</p>
+<div class="price">দাম জানতে কল করুন</div>
+<button class="add-btn" onclick="addToCart('Rice')">
+🛒 Add to Cart
+</button>
+</div>
+</div>
 
-    <div class="product">
-      <div class="product-image">🟡</div>
-      <h3>Holud</h3>
-      <p>গুণমানসম্পন্ন হলুদ</p>
-      <a class="btn btn-primary" href="tel:01721228690">Order Now</a>
-    </div>
+<div class="product">
+<div class="product-photo">🌶️</div>
+<div class="product-body">
+<h3>Morich</h3>
+<p>বাছাই করা মরিচ</p>
+<div class="price">দাম জানতে কল করুন</div>
+<button class="add-btn" onclick="addToCart('Morich')">
+🛒 Add to Cart
+</button>
+</div>
+</div>
 
-    <div class="product">
-      <div class="product-image">🌿</div>
-      <h3>Dhia</h3>
-      <p>বাছাই করা ধিয়া</p>
-      <a class="btn btn-primary" href="tel:01721228690">Order Now</a>
-    </div>
+<div class="product">
+<div class="product-photo">🟡</div>
+<div class="product-body">
+<h3>Holud</h3>
+<p>মানসম্মত হলুদ</p>
+<div class="price">দাম জানতে কল করুন</div>
+<button class="add-btn" onclick="addToCart('Holud')">
+🛒 Add to Cart
+</button>
+</div>
+</div>
 
-    <div class="product">
-      <div class="product-image">🌿</div>
-      <h3>পাঁচ ফোড়ন</h3>
-      <p>সুগন্ধি ও মানসম্মত পাঁচ ফোড়ন</p>
-      <a class="btn btn-primary" href="tel:01721228690">Order Now</a>
-    </div>
+<div class="product">
+<div class="product-photo">🌿</div>
+<div class="product-body">
+<h3>Dhonia</h3>
+<p>বিশুদ্ধ ধনিয়া</p>
+<div class="price">দাম জানতে কল করুন</div>
+<button class="add-btn" onclick="addToCart('Dhonia')">
+🛒 Add to Cart
+</button>
+</div>
+</div>
 
-    <div class="product">
-      <div class="product-image">🫓</div>
-      <h3>চালের গুঁড়া</h3>
-      <p>রুটি ও বিভিন্ন খাবার তৈরির জন্য উপযোগী</p>
-      <a class="btn btn-primary" href="tel:01721228690">Order Now</a>
-    </div>
+<div class="product">
+<div class="product-photo">🌿</div>
+<div class="product-body">
+<h3>Pach Foron</h3>
+<p>সুগন্ধি পাঁচ ফোড়ন</p>
+<div class="price">দাম জানতে কল করুন</div>
+<button class="add-btn" onclick="addToCart('Pach Foron')">
+🛒 Add to Cart
+</button>
+</div>
+</div>
 
-  </div>
+<div class="product">
+<div class="product-photo">🫓</div>
+<div class="product-body">
+<h3>Chaler Gura</h3>
+<p>রুটি ও বিভিন্ন খাবারের জন্য</p>
+<div class="price">দাম জানতে কল করুন</div>
+<button class="add-btn" onclick="addToCart('Chaler Gura')">
+🛒 Add to Cart
+</button>
+</div>
+</div>
+
+</div>
 </section>
 
 <section id="order">
-  <div class="order-box">
-    <h2>অর্ডার করতে চান?</h2>
 
-    <p>
-      খুচরা অথবা পাইকারি অর্ডারের জন্য সরাসরি আমাদের সাথে যোগাযোগ করুন।
-    </p>
+<div class="order-area">
 
-    <div class="buttons">
-      <a class="btn btn-primary" href="tel:01721228690">
-        📞 Order Now
-      </a>
+<h2>Need a Wholesale Order?</h2>
 
-      <a class="btn btn-secondary" href="tel:01721228690">
-        📦 Wholesale / Bulk Order
-      </a>
-    </div>
-  </div>
+<p style="margin-top:10px;">
+ব্যবসা বা বড় পরিমাণ অর্ডারের জন্য সরাসরি যোগাযোগ করুন।
+</p>
+
+<a class="btn btn-gold" href="tel:01721228690">
+📞 01721228690
+</a>
+
+<a class="btn btn-white" href="mailto:alom.sa2@gmail.com">
+✉️ Email Us
+</a>
+
+</div>
+
 </section>
 
 <section id="contact">
-  <div class="section-title">
-    <h2>যোগাযোগ করুন</h2>
-    <p>আমরা আপনার যোগাযোগের অপেক্ষায় আছি</p>
-  </div>
 
-  <div class="contact-grid">
+<div class="title">
+<h2>Contact Us</h2>
+<p>We are ready to serve you</p>
+</div>
 
-    <div class="contact-card">
-      <div class="icon">📞</div>
-      <h3>Phone</h3>
-      <a href="tel:01721228690">01721228690</a>
-    </div>
+<div class="contact-grid">
 
-    <div class="contact-card">
-      <div class="icon">✉️</div>
-      <h3>Email</h3>
-      <a href="mailto:alom.sa2@gmail.com">
-        alom.sa2@gmail.com
-      </a>
-    </div>
+<div class="contact">
+<div class="contact-icon">📞</div>
+<h3>Phone</h3>
+<a href="tel:01721228690">01721228690</a>
+</div>
 
-    <div class="contact-card">
-      <div class="icon">📍</div>
-      <h3>Location</h3>
-      <p>Misin Bari</p>
-      <p>XGHP+QP, Paigonj, Bangladesh</p>
-    </div>
+<div class="contact">
+<div class="contact-icon">✉️</div>
+<h3>Email</h3>
+<a href="mailto:alom.sa2@gmail.com">
+alom.sa2@gmail.com
+</a>
+</div>
 
-  </div>
+<div class="contact">
+<div class="contact-icon">📍</div>
+<h3>Location</h3>
+<p>Misin Bari</p>
+<p>XGHP+QP, Paigonj, Bangladesh</p>
+</div>
+
+</div>
+
 </section>
 
-<div class="map">
-  <h2>📍 আমাদের লোকেশন</h2>
+<div class="map-box">
 
-  <p>Misin Bari, XGHP+QP, Paigonj, Bangladesh</p>
+<h2>📍 Our Location</h2>
 
-  <br>
+<p>
+Misin Bari, XGHP+QP, Paigonj, Bangladesh
+</p>
 
-  <a
-    class="btn btn-primary"
-    target="_blank"
-    href="https://www.google.com/maps/search/?api=1&query=XGHP%2BQP%2C+Paigonj%2C+Bangladesh">
-    🗺️ Google Maps এ দেখুন
-  </a>
+<a
+class="btn btn-green"
+target="_blank"
+href="https://www.google.com/maps/search/?api=1&query=XGHP%2BQP%2C+Paigonj%2C+Bangladesh">
+🗺️ Open Google Maps
+</a>
+
 </div>
 
 <footer>
-  <p><strong>Mannan Rice Mill</strong></p>
-  <p>Quality Products • Trusted Service</p>
-  <p>© 2026 Mannan Rice Mill. All Rights Reserved.</p>
+
+<p><strong>MANNAN RICE MILL</strong></p>
+<p>Quality Products • Trusted Service</p>
+<p>© 2026 Mannan Rice Mill</p>
+
 </footer>
+
+<!-- CART -->
+
+<div class="cart-overlay" id="cartOverlay">
+
+<div class="cart">
+
+<div class="cart-head">
+<h2>🛒 Your Cart</h2>
+<button class="close-cart" onclick="closeCart()">×</button>
+</div>
+
+<div id="cartItems"></div>
+
+<div class="cart-total">
+Total: <span id="cartTotal">৳0</span>
+</div>
+
+<button class="btn btn-green" style="width:100%;margin:0;" onclick="showCheckout()">
+Proceed to Checkout
+</button>
+
+<div class="checkout" id="checkout">
+
+<h3 style="margin-bottom:10px;">Customer Information</h3>
+
+<input id="customerName" type="text" placeholder="Your Name">
+
+<input id="customerPhone" type="tel" placeholder="Phone Number">
+
+<textarea id="customerAddress" placeholder="Delivery Address"></textarea>
+
+<select id="paymentMethod" onchange="paymentChanged()">
+<option value="">Select Payment Method</option>
+<option value="bkash">💳 bKash Payment</option>
+<option value="cod">💵 Cash on Delivery</option>
+</select>
+
+<div class="pay-box" id="bkashBox" style="display:none;">
+
+<strong>💳 bKash Payment</strong>
+
+<p style="margin-top:6px;">
+bKash Merchant payment gateway connect করার পর
+এখানে automatic payment option চালু করা যাবে।
+</p>
+
+<input
+id="transactionId"
+type="text"
+placeholder="bKash Transaction ID (যদি থাকে)"
+>
+
+</div>
+
+<p class="note">
+⚠️ bKash-এর automatic payment এখনো gateway/API
+connect না করা পর্যন্ত সম্পূর্ণ হবে না।
+</p>
+
+<button class="place-order" onclick="placeOrder()">
+✅ Place Order
+</button>
+
+</div>
+
+</div>
+</div>
+
+<script>
+
+let cart = [];
+
+function addToCart(name){
+
+  let item = cart.find(x => x.name === name);
+
+  if(item){
+    item.qty++;
+  }else{
+    cart.push({
+      name:name,
+      qty:1
+    });
+  }
+
+  updateCart();
+
+  document.getElementById("cartOverlay").style.display="block";
+}
+
+function updateCart(){
+
+  let box=document.getElementById("cartItems");
+
+  box.innerHTML="";
+
+  let totalItems=0;
+
+  cart.forEach((item,index)=>{
+
+    totalItems += item.qty;
+
+    box.innerHTML += `
+      <div class="cart-item">
+        <div>
+          <strong>${item.name}</strong>
+          <br>
+          Quantity: ${item.qty}
+        </div>
+
+        <div class="qty">
+          <button onclick="changeQty(${index},-1)">−</button>
+          <button onclick="changeQty(${index},1)">+</button>
+        </div>
+      </div>
+    `;
+
+  });
+
+  document.getElementById("cartCount").innerText=totalItems;
+
+  document.getElementById("cartTotal").innerText=
+    "মূল্য ফোনে নিশ্চিত করুন";
+
+}
+
+function changeQty(index,amount){
+
+  cart[index].qty += amount;
+
+  if(cart[index].qty <= 0){
+    cart.splice(index,1);
+  }
+
+  updateCart();
+}
+
+function openCart(){
+
+  document.getElementById("cartOverlay").style.display="block";
+
+  updateCart();
+}
+
+function closeCart(){
+
+  document.getElementById("cartOverlay").style.display="none";
+
+}
+
+function showCheckout(){
+
+  if(cart.length===0){
+
+    alert("আপনার Cart খালি। আগে পণ্য নির্বাচন করুন।");
+
+    return;
+  }
+
+  document.getElementById("checkout").style.display="block";
+
+}
+
+function paymentChanged(){
+
+  let method=document.getElementById("paymentMethod").value;
+
+  document.getElementById("bkashBox").style.display =
+    method==="bkash" ? "block" : "none";
+
+}
+
+function placeOrder(){
+
+  if(cart.length===0){
+
+    alert("Cart খালি।");
+
+    return;
+  }
+
+  let name=document.getElementById("customerName").value.trim();
+  let phone=document.getElementById("customerPhone").value.trim();
+  let address=document.getElementById("customerAddress").value.trim();
+  let payment=document.getElementById("paymentMethod").value;
+
+  if(!name || !phone || !address){
+
+    alert("দয়া করে Name, Phone এবং Address পূরণ করুন।");
+
+    return;
+  }
+
+  if(!payment){
+
+    alert("একটি Payment Method নির্বাচন করুন।");
+
+    return;
+  }
+
+  let orderText="Mannan Rice Mill Order%0A%0A";
+
+  orderText += "Customer: "+encodeURIComponent(name)+"%0A";
+  orderText += "Phone: "+encodeURIComponent(phone)+"%0A";
+  orderText += "Address: "+encodeURIComponent(address)+"%0A%0A";
+
+  orderText += "Products:%0A";
+
+  cart.forEach(item=>{
+
+    orderText +=
+      encodeURIComponent(item.name)+
+      " x "+
+      item.qty+
+      "%0A";
+
+  });
+
+  orderText += "%0APayment: "+
+    encodeURIComponent(
+      payment==="bkash" ?
+      "bKash" :
+      "Cash on Delivery"
+    );
+
+  if(payment==="bkash"){
+
+    let trx=document.getElementById("transactionId").value.trim();
+
+    if(trx){
+
+      orderText +=
+        "%0ATransaction ID: "+
+        encodeURIComponent(trx);
+    }
+  }
+
+  alert(
+    "Order information তৈরি হয়েছে। এখন ফোনে Order confirm করুন।"
+  );
+
+  window.location.href =
+    "tel:01721228690";
+
+}
+
+</script>
 
 </body>
 </html>
