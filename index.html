@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mannan Rice Mill</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5faf5;
+      color: #183b24;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #123d22;
+      color: white;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    .hero {
+      padding: 90px 8%;
+      background: linear-gradient(135deg, #e4f4e5, #ffffff);
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin: 15px 0;
+    }
+
+    .hero h1 span {
+      color: #2d7d46;
+    }
+
+    .hero p {
+      font-size: 19px;
+      max-width: 650px;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #2d7d46;
+      color: white;
+      padding: 13px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+
+    section {
+      padding: 65px 8%;
+    }
+
+    section h2 {
+      font-size: 32px;
+      margin-bottom: 18px;
+    }
+
+    .light {
+      background: #eaf4e9;
+    }
+
+    .cards {
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+      margin-top: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 28px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      flex: 1;
+      min-width: 220px;
+    }
+
+    .card-icon {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .location {
+      background: #dceedd;
+      padding: 30px;
+      border-radius: 15px;
+    }
+
+    .contact {
+      background: #123d22;
+      color: white;
+    }
+
+    footer {
+      background: #0b2917;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        display: block;
+      }
+
+      nav {
+        margin-top: 12px;
+      }
+
+      nav a {
+        margin-right: 12px;
+        margin-left: 0;
+      }
+
+      .hero h1 {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">🌾 Mannan Rice Mill</div>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#location">Location</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <p>MANNAN RICE MILL</p>
+
+    <h1>
+      ভালো চাল, ভালো মান,<br>
+      <span>বিশ্বাসের সাথে।</span>
+    </h1>
+
+    <p>
+      চানপুর, ছাতক, সুনামগঞ্জে মানসম্মত চাল
+      প্রক্রিয়াজাত ও সরবরাহের জন্য
+      Mannan Rice Mill।
+    </p>
+
+    <a class="button" href="#contact">যোগাযোগ করুন</a>
+
+    <a class="button" href="#location">লোকেশন দেখুন</a>
+  </section>
+
+  <section id="about">
+    <h2>আমাদের সম্পর্কে</h2>
+
+    <p>
+      Mannan Rice Mill-এর লক্ষ্য হলো পরিষ্কার,
+      ভালো মানের চাল প্রক্রিয়াজাত করে স্থানীয়
+      বাজার ও গ্রাহকদের কাছে নির্ভরযোগ্যভাবে
+      পৌঁছে দেওয়া।
+    </p>
+  </section>
+
+  <section id="products" class="light">
+    <h2>আমাদের পণ্য</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-icon">🌾</div>
+        <h3>মানসম্মত চাল</h3>
+        <p>
+          দৈনন্দিন ব্যবহারের জন্য ভালো মানের চাল।
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">✨</div>
+        <h3>পরিষ্কার চাল</h3>
+        <p>
+          বাছাই ও পরিষ্কার করা চাল।
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🏭</div>
+        <h3>Rice Milling</h3>
+        <p>
+          ধান থেকে চাল প্রক্রিয়াজাতকরণের সুবিধা।
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="location">
+    <div class="location">
+
+      <h2>📍 আমাদের লোকেশন</h2>
+
+      <p>
+        Chanpur, Chhatak,<br>
+        Sunamganj, Sylhet, Bangladesh
+      </p>
+
+      <br>
+
+      <a
+        class="button"
+        target="_blank"
+        href="https://www.google.com/maps/search/?api=1&query=Mannan+Rice+Mill%2C+Chanpur%2C+Chhatak%2C+Sunamganj%2C+Bangladesh">
+        Google Maps খুলুন
+      </a>
+
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+
+    <h2>যোগাযোগ করুন</h2>
+
+    <p>
+      Mannan Rice Mill সম্পর্কে জানতে
+      আমাদের সাথে যোগাযোগ করুন।
+    </p>
+
+    <br>
+
+    <p>
+      📍 Chanpur, Chhatak, Sunamganj
+    </p>
+
+  </section>
+
+  <footer>
+    © 2026 Mannan Rice Mill
+  </footer>
+
+</body>
+</html>
