@@ -4,11 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>MANNAN MILL | Pure Food, Healthy Life</title>
+<title>MANNAN MILL | Pure Food & Quality Products</title>
 
-<meta name="description" content="MANNAN MILL - Rice, Morich, Holud, Dhonia, Pach Foron and Chaler Gura. Pure food, healthy life.">
-<meta name="keywords" content="Mannan Mill, Rice, Morich, Holud, Dhonia, Pach Foron, Chaler Gura, Bangladesh">
-<meta name="author" content="MANNAN MILL">
+<meta name="description" content="MANNAN MILL - Quality Rice, Morich, Holud, Dhonia, Pach Foron and Chaler Gura.">
 
 <style>
 *{
@@ -18,10 +16,9 @@
 }
 
 body{
-  font-family:Arial, sans-serif;
-  background:#f7f7f2;
+  font-family:Arial,sans-serif;
+  background:#f5f6ef;
   color:#222;
-  line-height:1.6;
 }
 
 header{
@@ -29,37 +26,31 @@ header{
   top:0;
   left:0;
   width:100%;
-  z-index:10;
   padding:18px 6%;
+  z-index:10;
   display:flex;
   justify-content:space-between;
   align-items:center;
-  background:rgba(0,0,0,.18);
+  background:rgba(0,0,0,.25);
 }
 
 .logo{
   color:white;
   font-size:25px;
   font-weight:900;
-  letter-spacing:1px;
 }
 
 .logo span{
-  color:#ffd54a;
+  color:#ffd43b;
 }
 
 nav a{
   color:white;
   text-decoration:none;
-  margin-left:22px;
+  margin-left:20px;
   font-weight:bold;
 }
 
-nav a:hover{
-  color:#ffd54a;
-}
-
-/* HERO */
 .hero{
   min-height:680px;
   display:flex;
@@ -67,85 +58,61 @@ nav a:hover{
   justify-content:center;
   text-align:center;
   color:white;
-  padding:100px 20px 60px;
 
   background:
-    linear-gradient(rgba(0,55,28,.35),rgba(0,35,18,.55)),
-    url("background.jpg") center/cover no-repeat;
-}
-
-.hero-content{
-  max-width:850px;
+  linear-gradient(rgba(0,50,25,.35),rgba(0,30,15,.55)),
+  url("Background.jpg.PNG") center/cover no-repeat;
 }
 
 .hero h1{
-  font-size:68px;
-  line-height:1;
+  font-size:65px;
   font-weight:900;
-  letter-spacing:3px;
-  text-shadow:0 3px 12px rgba(0,0,0,.45);
+  letter-spacing:4px;
 }
 
 .hero h2{
   font-size:38px;
-  color:#ffd54a;
-  margin-top:10px;
+  color:#ffd43b;
+  margin-top:5px;
 }
 
 .hero p{
   font-size:20px;
-  margin:22px auto;
-  max-width:700px;
+  margin:20px;
 }
 
 .btn{
   display:inline-block;
+  padding:13px 28px;
+  margin:7px;
   background:#f5b400;
   color:#111;
-  padding:13px 28px;
-  border-radius:30px;
   text-decoration:none;
+  border-radius:30px;
   font-weight:bold;
-  margin:8px;
 }
 
-.btn:hover{
-  background:#ffd54a;
-}
-
-/* SECTION */
 section{
   padding:70px 6%;
 }
 
-.section-title{
+.title{
   text-align:center;
-  font-size:36px;
   color:#075c32;
-  margin-bottom:12px;
+  font-size:36px;
+  margin-bottom:10px;
 }
 
-.section-subtitle{
+.subtitle{
   text-align:center;
   color:#666;
   margin-bottom:40px;
 }
 
-/* ABOUT */
-.about{
-  background:white;
-}
-
-.about-box{
-  max-width:950px;
-  margin:auto;
-  text-align:center;
-  font-size:18px;
-}
-
 /* PRODUCTS */
+
 .products{
-  background:#f5f5ed;
+  background:#f5f6ef;
 }
 
 .product-grid{
@@ -156,89 +123,98 @@ section{
   gap:25px;
 }
 
-.product-card{
+.card{
   background:white;
   border-radius:18px;
   overflow:hidden;
-  box-shadow:0 5px 20px rgba(0,0,0,.10);
+  box-shadow:0 5px 20px rgba(0,0,0,.12);
   transition:.3s;
 }
 
-.product-card:hover{
-  transform:translateY(-6px);
+.card:hover{
+  transform:translateY(-5px);
 }
 
-.product-card img{
+.card img{
   width:100%;
-  height:280px;
+  height:320px;
   object-fit:cover;
   display:block;
 }
 
-.product-info{
+.card-info{
   padding:20px;
   text-align:center;
 }
 
-.product-info h3{
+.card h3{
   color:#075c32;
-  font-size:24px;
-  margin-bottom:5px;
+  font-size:25px;
+  margin-bottom:7px;
 }
 
-.product-info p{
+.card p{
   color:#666;
 }
 
-.order-btn{
-  display:inline-block;
-  margin-top:12px;
+.order{
+  margin-top:15px;
   background:#075c32;
   color:white;
   border:0;
-  padding:10px 20px;
+  padding:11px 24px;
   border-radius:25px;
-  cursor:pointer;
   font-weight:bold;
+  cursor:pointer;
 }
 
-.order-btn:hover{
-  background:#0b7b43;
+/* ABOUT */
+
+.about{
+  background:white;
+}
+
+.about-box{
+  max-width:900px;
+  margin:auto;
+  text-align:center;
+  font-size:18px;
 }
 
 /* CONTACT */
+
 .contact{
   background:white;
 }
 
-.contact-box{
+.contact-grid{
   max-width:900px;
   margin:auto;
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:25px;
+  gap:20px;
 }
 
-.contact-card{
+.contact-box{
+  background:#f3f4eb;
   padding:25px;
-  background:#f5f5ed;
   border-radius:15px;
 }
 
-.contact-card h3{
+.contact-box h3{
   color:#075c32;
   margin-bottom:8px;
 }
 
-.contact-card a{
+.contact-box a{
   color:#075c32;
-  text-decoration:none;
   font-weight:bold;
+  text-decoration:none;
 }
 
 .map{
-  margin-top:35px;
-  text-align:center;
+  max-width:1000px;
+  margin:35px auto 0;
 }
 
 .map iframe{
@@ -249,52 +225,20 @@ section{
 }
 
 /* FOOTER */
+
 footer{
   background:#063b22;
   color:white;
   text-align:center;
-  padding:30px 20px;
+  padding:30px;
 }
 
 footer strong{
-  color:#ffd54a;
+  color:#ffd43b;
 }
 
-/* CART */
-.cart{
-  position:fixed;
-  right:20px;
-  bottom:20px;
-  z-index:50;
-  background:#075c32;
-  color:white;
-  width:60px;
-  height:60px;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:25px;
-  box-shadow:0 5px 20px rgba(0,0,0,.3);
-  cursor:pointer;
-}
+/* MOBILE */
 
-.cart-count{
-  position:absolute;
-  top:-4px;
-  right:-4px;
-  background:#e53935;
-  color:white;
-  width:23px;
-  height:23px;
-  border-radius:50%;
-  font-size:13px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-
-/* RESPONSIVE */
 @media(max-width:850px){
 
   nav{
@@ -309,19 +253,11 @@ footer strong{
     font-size:48px;
   }
 
-  .hero h2{
-    font-size:28px;
-  }
-
-  .hero p{
-    font-size:17px;
-  }
-
   .product-grid{
     grid-template-columns:repeat(2,1fr);
   }
 
-  .contact-box{
+  .contact-grid{
     grid-template-columns:1fr;
   }
 }
@@ -337,18 +273,22 @@ footer strong{
   }
 
   .hero h2{
-    font-size:25px;
+    font-size:28px;
+  }
+
+  .hero p{
+    font-size:17px;
   }
 
   .product-grid{
     grid-template-columns:1fr;
   }
 
-  .product-card img{
-    height:300px;
+  .card img{
+    height:330px;
   }
 
-  .section-title{
+  .title{
     font-size:30px;
   }
 }
@@ -357,365 +297,369 @@ footer strong{
 
 <body>
 
-<!-- HEADER -->
 <header>
-  <div class="logo">
-    MANNAN <span>MILL</span>
-  </div>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#products">Products</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<div class="logo">
+MANNAN <span>MILL</span>
+</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#products">Products</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+
 </header>
 
 
-<!-- HERO -->
+<!-- HOME -->
+
 <section class="hero" id="home">
-  <div class="hero-content">
 
-    <h1>MANNAN</h1>
-    <h2>MILL</h2>
+<div>
 
-    <p>
-      Pure Food | Healthy Life | A Better Tomorrow
-    </p>
+<h1>MANNAN</h1>
+<h2>MILL</h2>
 
-    <a class="btn" href="#products">Our Products</a>
+<p>
+Pure Food | Healthy Life | A Better Tomorrow
+</p>
 
-    <a class="btn" href="tel:01721228690">
-      Call Now
-    </a>
+<a class="btn" href="#products">
+Our Products
+</a>
 
-  </div>
+<a class="btn" href="tel:01721228690">
+Call Now
+</a>
+
+</div>
+
 </section>
 
 
 <!-- ABOUT -->
+
 <section class="about" id="about">
 
-  <h2 class="section-title">
-    About MANNAN MILL
-  </h2>
+<h2 class="title">
+About MANNAN MILL
+</h2>
 
-  <p class="section-subtitle">
-    Quality food products for your family
-  </p>
+<p class="subtitle">
+Quality food products for your family
+</p>
 
-  <div class="about-box">
+<div class="about-box">
 
-    <p>
-      <strong>MANNAN MILL</strong> is committed to providing
-      quality food products with care and responsibility.
-      We offer rice, spices and other essential food products
-      for everyday family cooking.
-    </p>
+<p>
+<strong>MANNAN MILL</strong> is committed to providing
+quality food products for everyday family cooking.
+We focus on freshness, quality and customer satisfaction.
+</p>
 
-    <br>
+<br>
 
-    <p>
-      Our goal is simple —
-      <strong>Pure Food, Healthy Life, A Better Tomorrow.</strong>
-    </p>
+<p>
+<strong>Pure Food • Healthy Life • A Better Tomorrow</strong>
+</p>
 
-  </div>
+</div>
 
 </section>
 
 
 <!-- PRODUCTS -->
+
 <section class="products" id="products">
 
-  <h2 class="section-title">
-    Our Products
-  </h2>
+<h2 class="title">
+Our Products
+</h2>
 
-  <p class="section-subtitle">
-    Fresh and quality products from MANNAN MILL
-  </p>
-
-
-  <div class="product-grid">
-
-    <!-- RICE -->
-    <div class="product-card">
-
-      <img src="rice.jpg"
-           alt="MANNAN MILL Rice">
-
-      <div class="product-info">
-
-        <h3>Rice</h3>
-
-        <p>
-          Quality rice for everyday meals.
-        </p>
-
-        <button class="order-btn"
-                onclick="orderProduct('Rice')">
-          Order Now
-        </button>
-
-      </div>
-    </div>
+<p class="subtitle">
+Fresh and quality products from MANNAN MILL
+</p>
 
 
-    <!-- MORICH -->
-    <div class="product-card">
-
-      <img src="morich.jpg"
-           alt="MANNAN MILL Morich Powder">
-
-      <div class="product-info">
-
-        <h3>Morich</h3>
-
-        <p>
-          Pure and flavorful chili powder.
-        </p>
-
-        <button class="order-btn"
-                onclick="orderProduct('Morich')">
-          Order Now
-        </button>
-
-      </div>
-    </div>
+<div class="product-grid">
 
 
-    <!-- HOLUD -->
-    <div class="product-card">
+<!-- RICE -->
 
-      <img src="holud.jpg"
-           alt="MANNAN MILL Holud Powder">
+<div class="card">
 
-      <div class="product-info">
+<div style="
+height:320px;
+display:flex;
+align-items:center;
+justify-content:center;
+background:linear-gradient(135deg,#e8f0df,#fff);
+font-size:70px;">
+🌾
+</div>
 
-        <h3>Holud</h3>
+<div class="card-info">
 
-        <p>
-          Fresh quality turmeric powder.
-        </p>
+<h3>Rice</h3>
 
-        <button class="order-btn"
-                onclick="orderProduct('Holud')">
-          Order Now
-        </button>
+<p>
+Premium 25 KG Rice Bag
+</p>
 
-      </div>
-    </div>
+<button class="order"
+onclick="orderProduct('Rice 25 KG')">
+Order Now
+</button>
 
+</div>
 
-    <!-- DHONIA -->
-    <div class="product-card">
-
-      <img src="dhonia.jpg"
-           alt="MANNAN MILL Dhonia Powder">
-
-      <div class="product-info">
-
-        <h3>Dhonia</h3>
-
-        <p>
-          Aromatic coriander powder.
-        </p>
-
-        <button class="order-btn"
-                onclick="orderProduct('Dhonia')">
-          Order Now
-        </button>
-
-      </div>
-    </div>
+</div>
 
 
-    <!-- PACH FORON -->
-    <div class="product-card">
+<!-- MORICH -->
 
-      <img src="pach-foron.jpg"
-           alt="MANNAN MILL Pach Foron">
+<div class="card">
 
-      <div class="product-info">
+<img
+src="Morich.jpg.PNG"
+alt="MANNAN MILL Morich">
 
-        <h3>Pach Foron</h3>
+<div class="card-info">
 
-        <p>
-          Traditional Bengali five-spice mix.
-        </p>
+<h3>Morich</h3>
 
-        <button class="order-btn"
-                onclick="orderProduct('Pach Foron')">
-          Order Now
-        </button>
+<p>
+Pure Chili Powder
+</p>
 
-      </div>
-    </div>
+<button class="order"
+onclick="orderProduct('Morich')">
+Order Now
+</button>
+
+</div>
+
+</div>
 
 
-    <!-- CHALER GURA -->
-    <div class="product-card">
+<!-- HOLUD -->
 
-      <img src="chaler-gura.jpg"
-           alt="MANNAN MILL Chaler Gura">
+<div class="card">
 
-      <div class="product-info">
+<img
+src="Holud.jpg.PNG"
+alt="MANNAN MILL Holud">
 
-        <h3>Chaler Gura</h3>
+<div class="card-info">
 
-        <p>
-          Fine rice flour for traditional recipes.
-        </p>
+<h3>Holud</h3>
 
-        <button class="order-btn"
-                onclick="orderProduct('Chaler Gura')">
-          Order Now
-        </button>
+<p>
+Pure Turmeric Powder
+</p>
 
-      </div>
-    </div>
+<button class="order"
+onclick="orderProduct('Holud')">
+Order Now
+</button>
 
-  </div>
+</div>
+
+</div>
+
+
+<!-- DHONIA -->
+
+<div class="card">
+
+<img
+src="Dhonia.jpg.PNG"
+alt="MANNAN MILL Dhonia">
+
+<div class="card-info">
+
+<h3>Dhonia</h3>
+
+<p>
+Pure Coriander Powder
+</p>
+
+<button class="order"
+onclick="orderProduct('Dhonia')">
+Order Now
+</button>
+
+</div>
+
+</div>
+
+
+<!-- PACH FORON -->
+
+<div class="card">
+
+<img
+src="Pach-foron.jpg.PNG"
+alt="MANNAN MILL Pach Foron">
+
+<div class="card-info">
+
+<h3>Pach Foron</h3>
+
+<p>
+Traditional Five Spice Mix
+</p>
+
+<button class="order"
+onclick="orderProduct('Pach Foron')">
+Order Now
+</button>
+
+</div>
+
+</div>
+
+
+<!-- CHALER GURA -->
+
+<div class="card">
+
+<img
+src="chaler-gura.jpg.PNG"
+alt="MANNAN MILL Chaler Gura">
+
+<div class="card-info">
+
+<h3>Chaler Gura</h3>
+
+<p>
+Fine Quality Rice Flour
+</p>
+
+<button class="order"
+onclick="orderProduct('Chaler Gura')">
+Order Now
+</button>
+
+</div>
+
+</div>
+
+
+</div>
 
 </section>
 
 
 <!-- CONTACT -->
+
 <section class="contact" id="contact">
 
-  <h2 class="section-title">
-    Contact MANNAN MILL
-  </h2>
+<h2 class="title">
+Contact MANNAN MILL
+</h2>
 
-  <p class="section-subtitle">
-    We are happy to hear from you
-  </p>
-
-
-  <div class="contact-box">
-
-    <div class="contact-card">
-
-      <h3>📞 Phone</h3>
-
-      <a href="tel:01721228690">
-        01721228690
-      </a>
-
-    </div>
+<p class="subtitle">
+We are happy to hear from you
+</p>
 
 
-    <div class="contact-card">
-
-      <h3>✉️ Email</h3>
-
-      <a href="mailto:alom.sa2@gmail.com">
-        alom.sa2@gmail.com
-      </a>
-
-    </div>
+<div class="contact-grid">
 
 
-    <div class="contact-card">
+<div class="contact-box">
 
-      <h3>📍 Location</h3>
+<h3>📞 Phone</h3>
 
-      <p>
-        Misin Bari<br>
-        XGHP+QP, Paigonj, Bangladesh
-      </p>
+<a href="tel:01721228690">
+01721228690
+</a>
 
-    </div>
-
-
-    <div class="contact-card">
-
-      <h3>🛒 Order</h3>
-
-      <p>
-        Product order করতে ফোন করুন।
-      </p>
-
-      <a href="tel:01721228690">
-        Order Now
-      </a>
-
-    </div>
-
-  </div>
+</div>
 
 
-  <div class="map">
+<div class="contact-box">
 
-    <h3 style="color:#075c32;margin-bottom:15px;">
-      Find Us
-    </h3>
+<h3>✉️ Email</h3>
 
-    <iframe
-      src="https://www.google.com/maps?q=XGHP%2BQP%2C%20Paigonj%2C%20Bangladesh&output=embed"
-      loading="lazy">
-    </iframe>
+<a href="mailto:alom.sa2@gmail.com">
+alom.sa2@gmail.com
+</a>
 
-  </div>
+</div>
+
+
+<div class="contact-box">
+
+<h3>📍 Location</h3>
+
+<p>
+Misin Bari<br>
+XGHP+QP, Paigonj, Bangladesh
+</p>
+
+</div>
+
+
+<div class="contact-box">
+
+<h3>🛒 Order</h3>
+
+<p>
+Order করতে ফোন করুন।
+</p>
+
+<br>
+
+<a href="tel:01721228690">
+Order Now
+</a>
+
+</div>
+
+
+</div>
+
+
+<div class="map">
+
+<iframe
+src="https://www.google.com/maps?q=XGHP%2BQP%2C%20Paigonj%2C%20Bangladesh&output=embed"
+loading="lazy">
+</iframe>
+
+</div>
 
 </section>
 
 
 <!-- FOOTER -->
+
 <footer>
 
-  <p>
-    © 2026 <strong>MANNAN MILL</strong>
-  </p>
+<p>
+© 2026 <strong>MANNAN MILL</strong>
+</p>
 
-  <p>
-    Pure Food | Healthy Life | A Better Tomorrow
-  </p>
+<p>
+Pure Food | Healthy Life | A Better Tomorrow
+</p>
 
-  <p>
-    Misin Bari, Paigonj, Bangladesh
-  </p>
+<p>
+Misin Bari, Paigonj, Bangladesh
+</p>
 
 </footer>
 
 
-<!-- CART BUTTON -->
-<div class="cart"
-     onclick="callOrder()">
-
-  🛒
-
-  <span class="cart-count">
-    0
-  </span>
-
-</div>
-
-
 <script>
-
-let cartCount = 0;
 
 function orderProduct(product){
 
-  cartCount++;
-
-  document.querySelector(".cart-count").innerText =
-    cartCount;
-
-  const message =
-    "MANNAN MILL Order: " + product;
-
-  window.location.href =
-    "tel:01721228690";
-
-}
-
-function callOrder(){
-
-  window.location.href =
-    "tel:01721228690";
+window.location.href =
+"tel:01721228690";
 
 }
 
