@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sahidulalom-max.github.io/Mannan-mill/sitemap.xml
